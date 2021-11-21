@@ -1,0 +1,100 @@
+.Home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.UserForm {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+    border-radius: 6px;
+    padding: 1%;
+    background-color: white;
+    height: 60%;
+}
+.BackgroundImg {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.RegisterDiv {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 4% 6%;
+    width: 50%;
+}
+.LogoWrap {
+    display: flex;
+}
+.Logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.RegisterSwitchDiv {
+    display: flex;
+    align-items: center;
+}
+.RegisterSwitchBtn {
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+}
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+.RegisterForm input {
+    border: none;
+    border-bottom: solid 1px rgb(158, 158, 158);
+    margin-bottom: 4%;
+    padding: 3% 0;
+}
+.SubmitBtn {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 3% 0;
+}
+
+.LogInDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.WelcomeBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.showLogIn {
+    flex-direction: row-reverse;
+    width: 50%;
+}
+.LogInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 35%;
+    width: 100%;
+}
+.LogInForm input {
+    border: none;
+    border-bottom: solid 1px rgb(158, 158, 158);
+    margin-bottom: 4%;
+    padding: 3% 0;
+}

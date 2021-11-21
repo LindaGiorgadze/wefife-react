@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home';
+import ChatPage from './Pages/Chat/ChatPage/ChatPage';
+import Messages from './Contexts/Messages';
+import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
+
+  const [messages, setMessages] = useState([]);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Router>
+        <Messages.Provider 
+        value={{
+          messages,
+          setMessages
+        }} 
         >
-          Learn React
-        </a>
-      </header>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/ChatPage' element={<ChatPage/>}/>
+            {/* <Home/> */}
+            {/* <ChatPage/> */}
+          </Routes>
+        </Messages.Provider>
+      </Router>
     </div>
   );
 }

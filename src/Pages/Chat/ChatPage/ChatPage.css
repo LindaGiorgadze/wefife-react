@@ -1,0 +1,16 @@
+.ChatPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChatPageCenter {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: teal;
+}

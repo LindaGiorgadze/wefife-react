@@ -1,0 +1,38 @@
+.CreateGroup {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.BrandName {
+    font-size: 30px;
+    margin: 45px auto 0;
+}
+.GroupForm {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 5%;
+}
+.CreateTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+.GroupName, .GroupDescription, .GroupBtn {
+    padding: 5%;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+}
+.GroupDescription {
+    height: 30%;
+}
+.GroupBtn {
+    cursor: pointer;
+    height: 15%;
+    padding: unset;
+    background-color: rgb(192, 190, 190);
+}
